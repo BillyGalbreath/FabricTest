@@ -1,0 +1,18 @@
+{
+  "targets": [
+    "swap",
+    "final"
+  ],
+  "passes": [
+    {
+      "name": "test",
+      "intarget": "final",
+      "outtarget": "swap"
+    },
+    {
+      "name": "test",
+      "intarget": "swap",
+      "outtarget": "final"
+    }
+  ]
+}
