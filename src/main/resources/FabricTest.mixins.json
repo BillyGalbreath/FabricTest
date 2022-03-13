@@ -4,6 +4,7 @@
   "package": "test.fabrictest.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "GameRendererMixin"
   ],
   "client": [
   ],

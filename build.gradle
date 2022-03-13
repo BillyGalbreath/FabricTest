@@ -17,14 +17,6 @@ repositories {
         name = ""
         url = "https://oss.sonatype.org/content/repositories/snapshots/"
     }
-    maven {
-        name = 'Ladysnake Mods'
-        url = 'https://ladysnake.jfrog.io/artifactory/mods'
-        content {
-            includeGroup 'io.github.ladysnake'
-            includeGroupByRegex 'io\\.github\\.onyxstudios.*'
-        }
-    }
 }
 
 dependencies {
@@ -33,7 +25,6 @@ dependencies {
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
     modImplementation("com.terraformersmc:modmenu:${project.modmenu_version}")
-    modImplementation(include("io.github.ladysnake:satin:${project.satin_version}"))
 }
 
 processResources {
